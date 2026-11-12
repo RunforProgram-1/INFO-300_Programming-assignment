@@ -122,7 +122,8 @@ function subnetHostChecker() {
 
     // Check subnet consistency with VPC
     console.log("\n===== RESULTS =====");
-
+    console.log("VPC CIDR: /" + vpcCIDR);
+    console.log("Subnet CIDR: /" + subnetCIDR);
     if (subnetCIDR >= vpcCIDR) {
 
         console.log("Subnet CIDR is consistent with VPC CIDR.");
